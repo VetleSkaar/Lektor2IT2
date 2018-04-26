@@ -5,7 +5,7 @@ var Results = [
 ];
 
 exportToCsv = function() {
-  var CsvString = "";
+  var CsvString = '"sep=,"';
   Results.forEach(function(RowItem, RowIndex) {
     RowItem.forEach(function(ColItem, ColIndex) {
       CsvString += ColItem + ',';

@@ -4,7 +4,7 @@ var Results = [
   ["Data", -100, 20, 100],
 ];
 
-exportToCsv = function() {
+var exportToCsv = function() {
   var CsvString = '"sep=,"\r\n';
   Results.forEach(function(RowItem, RowIndex) {
     RowItem.forEach(function(ColItem, ColIndex) {
@@ -13,9 +13,9 @@ exportToCsv = function() {
     CsvString += "\r\n";
   });
   CsvString = "data:application/csv," + encodeURIComponent(CsvString);
- var x = document.createElement("A");
- x.setAttribute("href", CsvString );
- x.setAttribute("download","somedata.csv");
- document.body.appendChild(x);
- x.click();
+  var x = document.createElement("A");
+  x.setAttribute("href", CsvString );
+  x.setAttribute("download","somedata.csv");
+  document.body.appendChild(x);
+  x.click();
 }

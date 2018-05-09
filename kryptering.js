@@ -26,14 +26,9 @@ function getDate(inp) {
 
 
 function runKrypt(inp) {
-    var x = getVerificationNumbers(inp),
-        y = getDate(inp),
-        z = [krypt(x), krypt(y)];
-    return z.join('-');
+    return [krypt(getVerificationNumbers(inp)), krypt(getDate(inp))].join('-');
 }
 
 function runSolve(inp) {
-    var x = inp.split("-"),
-        y = [solve(x[1]), solve(x[0])]
-    return Number(y.join(''));
+    return Number([solve(inp.split("-")[1]), solve(inp.split("-")[0])].join(''));
 }

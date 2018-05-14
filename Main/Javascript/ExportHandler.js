@@ -1,22 +1,25 @@
 var results = [
-  ["Fornavn", "Etternavn", "Adresse", "Poststed", "Mobil", "Fødselsnummer", "Basisgruppe", "Studierettning", "Foresatt Fornavn", "Foresatt Etternavn", "Foresatt Mobil Privat", "Foresatt Mobil Arbeid", "Foresatt Epost", "Foresatt Adresse", "Foresatt Poststed"],
+  ["Fornavn", "Etternavn", "Adresse", "Poststed", "Mobil", "Fødselsnummer", "Basisgruppe", "Studierettning", "Foresatt Fornavn", "Foresatt Etternavn", "Foresatt Mobil Privat", "Foresatt Mobil Arbeid", "Foresatt Epost", "Foresatt Adresse", "Foresatt Poststed"]
 ];
 
-var exportToCsv = function() {
-  var CsvString = '"sep=,"\r\n';
-  results.forEach(function(RowItem, RowIndex) {
-    RowItem.forEach(function(ColItem, ColIndex) {
-      CsvString += ColItem + ',';
-    });
+exportToCsv = function() {
+    var CsvString = '"sep=,"\r\n';
+    results.forEach(function(RowItem, RowIndex) {
+        RowItem.forEach(function(ColItem, ColIndex) {
+            CsvString += ColItem + ',';
+        });
+        
     CsvString += "\r\n";
-  });
-  CsvString = "data:application/csv," + encodeURIComponent(CsvString);
-  var x = document.createElement("A");
-  x.setAttribute("href", CsvString );
-  x.setAttribute("download","somedata.csv");
-  document.body.appendChild(x);
-  x.click();
+    });
+    
+    CsvString = "data:application/csv," + encodeURIComponent(CsvString);
+    var x = document.createElement("A");
+    x.setAttribute("href", CsvString );
+    x.setAttribute("download","somedata.csv");
+    document.body.appendChild(x);
+    x.click();
 }
+
 
 //--- Utestet kode
 function nyElev(){
@@ -24,7 +27,7 @@ function nyElev(){
   results.Sort(sort);
 }
 
-function sortKlasse(a,b){
+function sort(a,b){
   if(a.klasse > b.klasse){return 1;}
   else if(a.klasse < b.klasse){return -1;}
   else {

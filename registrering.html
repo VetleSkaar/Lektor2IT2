@@ -9,201 +9,187 @@
         <meta name="author" content="Ludvig Sørlie">
         <link rel="stylesheet" href="It%20Ludvig%20css.css"> 
     </head>
+    <body>
 
-<body>
+        <h1>Registreringsskjema</h1>   
 
-    <h1>Registreringsskjema</h1>   
-    
-    <form id="frm" onsubmit="svar()">
-    
-        <lable for="Fnavn">Fornavn</lable> <br>
-        <input type="text" id=Fnavn size="20" maxlength="30">
-        <br>
-    
-        <lable for="Enavn">Etternavn</lable> <br>       
-        <input type="text" id=Enavn size="20" maxlength="30">
-        <br>
+        <form id="frm" onsubmit="svar()">
 
-        <lable for="gadr">Gateadresse</lable>  <br> 
-        <input type="text" id=gadr size="20" maxlength="50">
-        <br>
-    
-     <!-- pattern setter hva som er lov [type],{lengde}  Hvis vi vil ha Pnummer lar jeg den stå for nå, bare kommenter ut  --> 
-    <!--
-        <lable for="Pnummer">Postnummer</lable> <br>
-        <input type="number" id=Pnummer size="4" maxlength="4" placeholder="1234" pattern="[0-9]{4}"> 
-        <br>
-    --> 
-    
-        <lable for="Psted">Poststed</lable>  <br> 
-        <input type="text" id=Psted size="20" maxlength="30" placeholder="Sandefjord">
-        <br>
+            <lable for="Fnavn">Fornavn</lable> <br>
+            <input type="text" id=Fnavn size="20" maxlength="30">
+            <br>
 
-        <lable for="epost">Epost</lable> <br>
-        <input type="text" id=epost size="20" maxlength="30" placeholder="navn@email.no">
-        <br>
-        
-        <lable for="Mnummer">Mobilnummer</lable>   <br>
-        <input type="number" id="Mnummer" size="8" pattern="[0-9]{8}">
-        <br>
-        
-        <lable for="Fnummer">Fødselsnummer</lable>   <br>
-        <input type="number" id="Fnummer" size="11" pattern="[0-9]{11}">
-        <br>
-        
-        <br>
-        
-        <lable for="Maalform">Målform</lable> <br>       
-        <input type="text" id=Mform size="20">
-        <br>
-        
-        <lable for="Basisgruppe">Basisgruppe</lable> <br>       
-        <input type="text" id=Bgruppe size="20">
-        <br>
-        
-     
-        <lable for="Studieretning">Studieretning</lable>
-        <br>
-        <select id="Sretning" required>
-        <option value="Yfag">Yrkesfag</option>
-        <option value="Sspes">Studiespesialiserende</option>
-        <option value="PB">Påbygg</option>
-        </select>   
-        <br>
-        
-    
-    </form>   
-    
-   <br> 
-    <span></span>
-     
-    
-    <div> </div>
-    
-     <form id="frm" onsubmit="svar()">
-    
-        <lable for="Fnavn">Fornavn</lable> <br>
-        <input type="text" id=Fnavn size="20" maxlength="30">
-        <br>
-    
-        <lable for="Enavn">Etternavn</lable> <br>       
-        <input type="text" id=Enavn size="20" maxlength="30">
-        <br>
+            <lable for="Enavn">Etternavn</lable> <br>       
+            <input type="text" id=Enavn size="20" maxlength="30">
+            <br>
 
-        <lable for="Gadr">Gateadresse</lable>  <br> 
-        <input type="text" id=Gadr size="20" maxlength="50">
-        <br>
-    
-     
-        <lable for="Psted">Poststed</lable>  <br> 
-        <input type="text" id=Psted size="20" maxlength="30" placeholder="Sandefjord">
-        <br>
+            <lable for="gadr">Gateadresse</lable>  <br> 
+            <input type="text" id=gadr size="20" maxlength="50">
+            <br>
 
-        <lable for="epost">Epost</lable> <br>
-        <input type="text" id=epost size="20" maxlength="30" placeholder="navn@email.no">
-        <br>
-        
-        <lable for="Mnummer">Mobilnummer</lable>   <br>
-        <input type="number" id="Mnummer" size="8" pattern="[0-9]{8}">
-        <br>
-        <br>
-         
-         <lable for="Arb">Telefon Arb</lable>   <br>
-        <input type="number" id="Arb" size="8" pattern="[0-9]{8}">
-        <br>
-        
-    <!-- del 2 -->
-        <input type="submit" value="Register">  <form id="frm" onsubmit="svar()">
-    
-        <lable for="Foresattfnavn">Fornavn</lable> <br>
-        <input type="text" id=F1navn size="20" maxlength="30">
-        <br>
-    
-        <lable for="Enavn">Etternavn</lable> <br>       
-        <input type="text" id=Enavn size="20" maxlength="30">
-        <br>
+         <!-- pattern setter hva som er lov [type],{lengde}  Hvis vi vil ha Pnummer lar jeg den stå for nå, bare kommenter ut  --> 
+        <!--
+            <lable for="Pnummer">Postnummer</lable> <br>
+            <input type="number" id=Pnummer size="4" maxlength="4" placeholder="1234" pattern="[0-9]{4}"> 
+            <br>
+        --> 
 
-        <lable for="Gadr">Gateadresse</lable>  <br> 
-        <input type="text" id=Gadr size="20" maxlength="50">
-        <br>
-    
-     
-        <lable for="Psted">Poststed</lable>  <br> 
-        <input type="text" id=Psted size="20" maxlength="30" placeholder="Sandefjord">
-        <br>
+            <lable for="Psted">Poststed</lable>  <br> 
+            <input type="text" id=Psted size="20" maxlength="30" placeholder="Sandefjord">
+            <br>
 
-        <lable for="epost">Epost</lable> <br>
-        <input type="text" id=epost size="20" maxlength="30" placeholder="navn@email.no">
-        <br>
-        
-        <lable for="Mnummer">Mobilnummer</lable>   <br>
-        <input type="number" id="Mnummer" size="8" pattern="[0-9]{8}">
-        <br>
-        <br>
-         
-         <lable for="Arbnummer">Mobilnummer</lable>   <br>
-        <input type="number" id="Arbummer" size="8" pattern="[0-9]{8}">
-        <br>
-        
-        
-        <input type="submit" value="Register">
-    
-    </form>   
-    
-         
-         
-         <h3> Kontroll av opplysninnger</h3>
-         <br> 
-         <p> Vi ber deg gå gjennom opplysningene over, og korrigere evt. feil eller mangler. 
-         <br> ALLE SKAL LEVERE ELEVKORT!
-        <br> Kontaktlærer samler inn og arkiverer hos seg. Koip til resepsjonen. Dersom du lurer på noe spør kontaktlærer. 
-         </p>
-         
-         
-    <script>
-        
-        
-        
-        
-    </script>  
+            <lable for="epost">Epost</lable> <br>
+            <input type="text" id=epost size="20" maxlength="30" placeholder="navn@email.no">
+            <br>
 
-<script> 
-    
-    var registrering = document.getElementById("registrering");
-    var fornavn = document.getElementById("Fnavn");
-    var etternavn = document.getElementById("Enavn");
-    var gateadresse = document.getElementById("gadr");
-    var poststed = document.getElementById("Psted");
-    var epost = document.getElementById("epost");
-    var fNummer = document.getElementById("Fnummer");
-    var mNummer = document.getElementById("Mnummer");
-    var Basisgruppe = document.getElementById("Mform");
-    var Studieretning = document.getElementById("Bgruppe");
-    var frm = document.getElementById("Sretning");
-    var frm = document.getElementById("frm");
-    var frm = document.getElementById("frm");
-    var frm = document.getElementById("frm");
-    var frm = document.getElementById("frm");
-    var frm = document.getElementById("frm");
-    
-    
-    var frmRegistrer= document.getElementById("frm");
-    var velgFlyplassUtreise = document.getElementById("velgFlyplassUtreise");
-        frmFlyreise.onsubmit= function(evt){
-            evt.preventDefault();
-            info.innerHTML="Utreise fra"+velgFlyplassUtreise.value;
-            
-            
-            document.getElementById("inpUtdato"); 
-            document.getElementById("inpReturdato");
-            
-            info.innerHTML="Utreise fra:" +velgFlyplassUtreise.value+"<br>";
-            
-        }
-        
-    </script> 
-         
-         
-</body>
+            <lable for="Mnummer">Mobilnummer</lable>   <br>
+            <input type="number" id="Mnummer" size="8" pattern="[0-9]{8}">
+            <br>
+
+            <lable for="Fnummer">Fødselsnummer</lable>   <br>
+            <input type="number" id="Fnummer" size="11" pattern="[0-9]{11}">
+            <br>
+
+            <br>
+
+            <lable for="Maalform">Målform</lable> <br>       
+            <input type="text" id=Mform size="20">
+            <br>
+
+            <lable for="Basisgruppe">Basisgruppe</lable> <br>       
+            <input type="text" id=Bgruppe size="20">
+            <br>
+
+
+            <lable for="Studieretning">Studieretning</lable>
+            <br>
+            <select id="Sretning" required>
+            <option value="Yfag">Yrkesfag</option>
+            <option value="Sspes">Studiespesialiserende</option>
+            <option value="PB">Påbygg</option>
+            </select>   
+            <br>
+
+
+        </form>   
+
+       <br> 
+        <span></span>
+
+
+        <div> </div>
+
+         <form id="frm" onsubmit="svar()">
+
+            <lable for="Fnavn">Fornavn</lable> <br>
+            <input type="text" id=Fnavn size="20" maxlength="30">
+            <br>
+
+            <lable for="Enavn">Etternavn</lable> <br>       
+            <input type="text" id=Enavn size="20" maxlength="30">
+            <br>
+
+            <lable for="Gadr">Gateadresse</lable>  <br> 
+            <input type="text" id=Gadr size="20" maxlength="50">
+            <br>
+
+
+            <lable for="Psted">Poststed</lable>  <br> 
+            <input type="text" id=Psted size="20" maxlength="30" placeholder="Sandefjord">
+            <br>
+
+            <lable for="epost">Epost</lable> <br>
+            <input type="text" id=epost size="20" maxlength="30" placeholder="navn@email.no">
+            <br>
+
+            <lable for="Mnummer">Mobilnummer</lable>   <br>
+            <input type="number" id="Mnummer" size="8" pattern="[0-9]{8}">
+            <br>
+            <br>
+
+             <lable for="Arb">Telefon Arb</lable>   <br>
+            <input type="number" id="Arb" size="8" pattern="[0-9]{8}">
+            <br>
+
+        <!-- del 2 -->
+            <input type="submit" value="Register">  <form id="frm" onsubmit="svar()">
+
+            <lable for="Foresattfnavn">Fornavn</lable> <br>
+            <input type="text" id=F1navn size="20" maxlength="30">
+            <br>
+
+            <lable for="Enavn">Etternavn</lable> <br>       
+            <input type="text" id=Enavn size="20" maxlength="30">
+            <br>
+
+            <lable for="Gadr">Gateadresse</lable>  <br> 
+            <input type="text" id=Gadr size="20" maxlength="50">
+            <br>
+
+
+            <lable for="Psted">Poststed</lable>  <br> 
+            <input type="text" id=Psted size="20" maxlength="30" placeholder="Sandefjord">
+            <br>
+
+            <lable for="epost">Epost</lable> <br>
+            <input type="text" id=epost size="20" maxlength="30" placeholder="navn@email.no">
+            <br>
+
+            <lable for="Mnummer">Mobilnummer</lable>   <br>
+            <input type="number" id="Mnummer" size="8" pattern="[0-9]{8}">
+            <br>
+            <br>
+
+             <lable for="Arbnummer">Mobilnummer</lable>   <br>
+            <input type="number" id="Arbummer" size="8" pattern="[0-9]{8}">
+            <br>
+
+
+            <input type="submit" value="Register">
+
+        </form>   
+
+
+
+             <h3> Kontroll av opplysninnger</h3>
+             <br> 
+             <p> Vi ber deg gå gjennom opplysningene over, og korrigere evt. feil eller mangler. 
+             <br> ALLE SKAL LEVERE ELEVKORT!
+            <br> Kontaktlærer samler inn og arkiverer hos seg. Koip til resepsjonen. Dersom du lurer på noe spør kontaktlærer. 
+             </p>
+
+        <script src="kryptering.js"></script>
+        <script src="HTMLLocalStorage.js"></script>
+        <script src="script.js"></script>
+
+        <script> 
+            var registrering = document.getElementById("registrering");
+            var fornavn = document.getElementById("Fnavn");
+            var etternavn = document.getElementById("Enavn");
+            var gateadresse = document.getElementById("gadr");
+            var poststed = document.getElementById("Psted");
+            var epost = document.getElementById("epost");
+            var fNummer = document.getElementById("Fnummer");
+            var mNummer = document.getElementById("Mnummer");
+            var Basisgruppe = document.getElementById("Mform");
+            var Studieretning = document.getElementById("Bgruppe");
+            var frm = document.getElementById("Sretning");
+            var frm = document.getElementById("frm");
+            var frm = document.getElementById("frm");
+            var frm = document.getElementById("frm");
+            var frm = document.getElementById("frm");
+            var frm = document.getElementById("frm");
+
+            var frmRegistrer= document.getElementById("frm");
+            var velgFlyplassUtreise = document.getElementById("velgFlyplassUtreise");
+                frmFlyreise.onsubmit= function(evt){
+                    evt.preventDefault();
+                    info.innerHTML="Utreise fra"+velgFlyplassUtreise.value;
+                    document.getElementById("inpUtdato"); 
+                    document.getElementById("inpReturdato");
+                    info.innerHTML="Utreise fra:" +velgFlyplassUtreise.value+"<br>";
+                }  
+        </script> 
+    </body>
 
 </html>

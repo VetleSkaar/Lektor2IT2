@@ -18,7 +18,22 @@ var exportToCsv = function() {
   x.click();
 }
 
-
+//--- Utestet kode
 function nyElev(){
-  //TODO
+  results.Push([x,y,z,a,b,c,d,e,f,g,h,l,m,n,o,p,q]);
+  results.Sort(sort);
 }
+
+function sortKlasse(a,b){
+  if(a.klasse > b.klasse){return 1;}
+  else if(a.klasse < b.klasse){return -1;}
+  else {
+    if(a.etternavn > b.etternavn){return 1;}
+    else if(a.etternavn < b.etternavn){return -1;}
+    else {
+      if(a.fornavn > b.fornavn){return 1;}
+      if(a.fornavn < b.fornavn){return -1;}
+    }
+  }
+}
+//---

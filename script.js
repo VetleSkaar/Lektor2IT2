@@ -1,12 +1,10 @@
-var Results = [
-  ["Col1", "Col2", "Col3", "Col4"],
-  ["Data", 50, 100, 500],
-  ["Data", -100, 20, 100],
+var results = [
+  ["Fornavn", "Etternavn", "Adresse", "Poststed", "Mobil", "Fødselsnummer", "Basisgruppe", "Studierettning", "Foresatt Fornavn", "Foresatt Etternavn", "Foresatt Mobil Privat", "Foresatt Mobil Arbeid", "Foresatt Epost", "Foresatt Adresse", "Foresatt Poststed"],
 ];
 
 var exportToCsv = function() {
   var CsvString = '"sep=,"\r\n';
-  Results.forEach(function(RowItem, RowIndex) {
+  results.forEach(function(RowItem, RowIndex) {
     RowItem.forEach(function(ColItem, ColIndex) {
       CsvString += ColItem + ',';
     });
@@ -18,4 +16,9 @@ var exportToCsv = function() {
   x.setAttribute("download","somedata.csv");
   document.body.appendChild(x);
   x.click();
+}
+
+
+function nyElev(){
+  //TODO
 }

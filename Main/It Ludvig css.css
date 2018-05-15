@@ -1,0 +1,51 @@
+p{
+color: black;
+font-family: Lucidia Console;
+}
+
+h1, h2, h3{
+    color:aquamarine;
+    font-weight: : bold; 
+}
+
+body{
+    
+    background-color:#456789;
+    font-family: serif;
+    font-size: 16px;        
+}
+
+a{
+    color: limegreen;
+    text-decoration: none;
+    text-align: center; 
+    cursor: auto;
+}
+
+a visit{	
+color: (green)
+text-decoration: underline;
+cursor: auto;
+}
+
+ul{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+th{
+    
+    font-weight: bold;
+    text-align: center;
+    vertical-align: inherit;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;   
+}

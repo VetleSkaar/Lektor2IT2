@@ -23,8 +23,10 @@ exportToCsv = function() {
 
 //--- Utestet kode
 function nyElev(){
+  results = LocalStorage.GetObj("results");
   results.Push([x,y,z,a,b,c,d,e,f,g,h,l,m,n,o,p,q]);
   results.Sort(sort);
+  LocalStorage.SetObj("results", results);
 }
 
 function sort(a,b){
